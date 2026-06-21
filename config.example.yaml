@@ -1,0 +1,45 @@
+profile:
+  display_name: "Tyler"
+  timezone: "America/New_York"
+
+gmail:
+  account: "user@gmail.com"
+  query: 'newer_than:3d (bandcamp OR "bandcamp.com" OR music OR label OR newsletter)'
+  max_emails: 80
+  include_subjects: true
+  include_senders: false
+  include_snippets: false
+
+music:
+  preferred_terms:
+    - techno
+    - house
+    - ambient
+    - experimental
+  priority_sources:
+    - Bandcamp
+    - Resident Advisor
+    - Boomkat
+  bonus_terms:
+    label: 6
+    club: 6
+    vinyl: 5
+    remix: 4
+
+bandcamp:
+  enabled: true
+  max_links_per_run: 80
+
+spotify:
+  enabled: false
+  playlist_id: ""
+  max_tracks_per_run: 25
+
+site:
+  title: "Daily Crate"
+  subtitle: "music from your inbox"
+
+output:
+  data_dir: "data"
+  web_dir: "web"
+  archive_days: 365
