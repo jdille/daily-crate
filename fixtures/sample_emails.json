@@ -1,0 +1,12 @@
+{
+  "messages": [
+    {
+      "id": "sample-1",
+      "subject": "Bandcamp Friday: deep picks",
+      "sender": "newsletter@example.com",
+      "date": "Fri, 19 Jun 2026 09:00:00 -0400",
+      "snippet": "A few new Bandcamp releases for your weekend.",
+      "body": "Try this: https://music.monsterletter.com/album/the-secret-apple and this track https://autechre.bandcamp.com/track/tt1pd"
+    }
+  ]
+}

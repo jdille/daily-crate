@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Daily Crate</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1><span class="dot"></span><span id="siteTitle">Daily Crate</span></h1>
+      <div class="summary" id="summary">loading…</div>
+      <div class="controls">
+        <input id="q" placeholder="search artist, track, release, source, tag…" autocomplete="off" />
+        <select id="mode"><option value="latest">latest pull</option><option value="archive">archive</option><option value="saved">saved</option></select>
+        <select id="tag"><option value="">all tags</option></select>
+        <select id="sort"><option value="page">page/date order</option><option value="score">score</option><option value="artist">artist</option><option value="duration">duration</option></select>
+        <input id="date" type="date" title="date added / first seen" />
+        <input id="minScore" type="number" min="0" max="150" step="1" placeholder="min score" />
+      </div>
+      <div class="player" id="playerBox">
+        <img class="player-art" id="playerArt" alt="album artwork" hidden />
+        <div>
+          <div class="player-title" id="playerTitle">load a row below</div>
+          <div class="player-sub" id="playerSub">hotkeys: 0 focus · n next · p prev · s save · h heard · data stays in this browser</div>
+        </div>
+        <div class="player-controls">
+          <button id="prevTrack">prev</button>
+          <button id="nextTrack">next</button>
+          <button id="autoNext" class="active">auto-play next: on</button>
+          <button id="exportState">export saves</button>
+          <label class="import-label">import<input id="importState" type="file" accept="application/json" hidden /></label>
+          <span class="player-sub" id="queueStatus">queue: 0/0</span>
+          <audio id="audio" controls preload="none"></audio>
+        </div>
+        <iframe id="fallbackPlayer" title="Bandcamp fallback player" loading="lazy" tabindex="0" src="about:blank"></iframe>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="privacy-note">generated data is static; saves/listens are stored locally in this browser. if this GitHub Pages site is public, anyone with the URL may see the music metadata.</div>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th class="score-col">score</th><th class="date-col">added</th><th class="artist-col">artist</th><th>track / release</th><th class="release-col hide-sm">release</th><th class="tags-col hide-sm">tags</th><th class="source-col hide-sm">source</th><th class="actions-col"></th></tr></thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+    <div id="empty" class="empty" hidden>no matches.</div>
+  </main>
+  <script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+{
+  "site": {
+    "title": "Daily Crate",
+    "subtitle": "music from your inbox"
+  },
+  "generated_at": "2026-06-21T01:50:35+00:00",
+  "emails_reviewed": 1,
+  "items": [
+    {
+      "url": "https://autechre.bandcamp.com/track/tt1pd",
+      "score": 73,
+      "reasons": [
+        "Bandcamp",
+        "track"
+      ],
+      "source_subject": "Bandcamp Friday: deep picks",
+      "source_from": "",
+      "source_date": "Fri, 19 Jun 2026 09:00:00 -0400",
+      "snippet": "",
+      "artist": "Autechre",
+      "release": "tt1pd",
+      "page_title": "tt1pd | Autechre",
+      "embed_url": "https://bandcamp.com/EmbeddedPlayer/track=2632527131/size=large/bgcol=111111/linkcol=e6a23c/artwork=small/transparent=true/",
+      "artwork_url": "https://f4.bcbits.com/img/a2105785602_5.jpg",
+      "bandcamp_item_type": "t",
+      "bandcamp_item_id": 2632527131,
+      "tracks": [
+        {
+          "num": 3,
+          "title": "tt1pd",
+          "artist": "",
+          "duration": 1331.58,
+          "url": "https://autechre.bandcamp.com/track/tt1pd",
+          "id": 2632527131,
+          "stream_url": "https://t4.bcbits.com/stream/f46c24e69dc5ea10b7ec6d42842a7348/mp3-128/2632527131?p=0&ts=1782093035&t=68d0a37eef650b9571d4e541dfa18b9ef59d6818&token=1782093035_7f3e18dc5d95276d87cd41680db1b71a156a13e1"
+        }
+      ],
+      "fetch_error": ""
+    }
+  ],
+  "rows": [
+    {
+      "parent_url": "https://autechre.bandcamp.com/track/tt1pd",
+      "release": "tt1pd",
+      "label_artist": "Autechre",
+      "score": 73,
+      "reasons": [
+        "Bandcamp",
+        "track"
+      ],
+      "source_subject": "Bandcamp Friday: deep picks",
+      "source_from": "",
+      "source_date": "Fri, 19 Jun 2026 09:00:00 -0400",
+      "snippet": "",
+      "pull_date": "2026-06-21",
+      "platform": "Bandcamp",
+      "artwork_url": "https://f4.bcbits.com/img/a2105785602_5.jpg",
+      "key": "https://autechre.bandcamp.com/track/tt1pd#track-2632527131",
+      "url": "https://autechre.bandcamp.com/track/tt1pd#track-2632527131",
+      "type": "track",
+      "title": "tt1pd",
+      "artist": "Autechre",
+      "duration": 1331.58,
+      "bandcamp_track_id": 2632527131,
+      "stream_url": "https://t4.bcbits.com/stream/f46c24e69dc5ea10b7ec6d42842a7348/mp3-128/2632527131?p=0&ts=1782093035&t=68d0a37eef650b9571d4e541dfa18b9ef59d6818&token=1782093035_7f3e18dc5d95276d87cd41680db1b71a156a13e1",
+      "embed_url": "https://bandcamp.com/EmbeddedPlayer/track=2632527131/size=large/bgcol=111111/linkcol=e6a23c/artwork=small/transparent=true/"
+    }
+  ],
+  "archive_summary": "2 archived rows across 2 pulls.",
+  "summary": "Daily Crate: 1 Bandcamp finds / 1 playable rows from 1 recent music emails."
+}

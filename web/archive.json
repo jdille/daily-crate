@@ -1,0 +1,91 @@
+{
+  "items": {
+    "https://example.bandcamp.com/album/sample-release": {
+      "parent_url": "https://example.bandcamp.com/album/sample-release",
+      "release": "Sample Release",
+      "label_artist": "Example Artist",
+      "score": 76,
+      "reasons": [
+        "Bandcamp",
+        "ambient",
+        "album"
+      ],
+      "source_subject": "Sample music newsletter",
+      "source_from": "",
+      "source_date": "2026-06-21",
+      "snippet": "",
+      "pull_date": "2026-06-21",
+      "platform": "Bandcamp",
+      "artwork_url": "",
+      "key": "https://example.bandcamp.com/album/sample-release",
+      "url": "https://example.bandcamp.com/album/sample-release",
+      "type": "release",
+      "title": "Sample Release",
+      "artist": "Example Artist",
+      "duration": 0,
+      "bandcamp_track_id": "",
+      "stream_url": "",
+      "embed_url": "https://bandcamp.com/EmbeddedPlayer/album=123456789/size=large/bgcol=111111/linkcol=e6a23c/artwork=small/transparent=true/",
+      "first_seen_at": "2026-06-21T00:00:00+00:00",
+      "last_seen_at": "2026-06-21T00:00:00+00:00",
+      "seen_count": 1,
+      "pull_dates": [
+        "2026-06-21"
+      ],
+      "best_score": 76
+    },
+    "https://autechre.bandcamp.com/track/tt1pd#track-2632527131": {
+      "parent_url": "https://autechre.bandcamp.com/track/tt1pd",
+      "release": "tt1pd",
+      "label_artist": "Autechre",
+      "score": 73,
+      "reasons": [
+        "Bandcamp",
+        "track"
+      ],
+      "source_subject": "Bandcamp Friday: deep picks",
+      "source_from": "",
+      "source_date": "Fri, 19 Jun 2026 09:00:00 -0400",
+      "snippet": "",
+      "pull_date": "2026-06-21",
+      "platform": "Bandcamp",
+      "artwork_url": "https://f4.bcbits.com/img/a2105785602_5.jpg",
+      "key": "https://autechre.bandcamp.com/track/tt1pd#track-2632527131",
+      "url": "https://autechre.bandcamp.com/track/tt1pd#track-2632527131",
+      "type": "track",
+      "title": "tt1pd",
+      "artist": "Autechre",
+      "duration": 1331.58,
+      "bandcamp_track_id": 2632527131,
+      "stream_url": "https://t4.bcbits.com/stream/f46c24e69dc5ea10b7ec6d42842a7348/mp3-128/2632527131?p=0&ts=1782093035&t=68d0a37eef650b9571d4e541dfa18b9ef59d6818&token=1782093035_7f3e18dc5d95276d87cd41680db1b71a156a13e1",
+      "embed_url": "https://bandcamp.com/EmbeddedPlayer/track=2632527131/size=large/bgcol=111111/linkcol=e6a23c/artwork=small/transparent=true/",
+      "first_seen_at": "2026-06-21T01:50:35+00:00",
+      "last_seen_at": "2026-06-21T01:50:35+00:00",
+      "seen_count": 1,
+      "pull_dates": [
+        "2026-06-21"
+      ],
+      "best_score": 73
+    }
+  },
+  "snapshots": [
+    {
+      "generated_at": "2026-06-21T00:00:00+00:00",
+      "pull_date": "2026-06-21",
+      "emails_reviewed": 1,
+      "links_found": 1,
+      "items_found": 1,
+      "rows_found": 1
+    },
+    {
+      "generated_at": "2026-06-21T01:50:35+00:00",
+      "pull_date": "2026-06-21",
+      "emails_reviewed": 1,
+      "links_found": 1,
+      "items_found": 1,
+      "rows_found": 1
+    }
+  ],
+  "updated_at": "2026-06-21T01:50:35+00:00",
+  "summary": "2 archived rows across 2 pulls."
+}
