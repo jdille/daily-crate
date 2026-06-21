@@ -62,6 +62,6 @@ GitHub Pages may be public depending on repo/settings. Daily Crate minimizes dat
 - no raw email body
 - no full sender address unless configured
 - only short source subject/date/category
-- public Bandcamp metadata and URLs
-
+- public Bandcamp metadata and page/embed URLs
+- direct Bandcamp preview stream URLs are off by default because they include signed, expiring query tokens; use `bandcamp.publish_direct_stream_urls: true` only for a private site if you want native `<audio>` playback
 See `docs/privacy.md`.

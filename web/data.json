@@ -3,7 +3,7 @@
     "title": "Daily Crate",
     "subtitle": "music from your inbox"
   },
-  "generated_at": "2026-06-21T01:50:35+00:00",
+  "generated_at": "2026-06-21T02:14:07+00:00",
   "emails_reviewed": 1,
   "items": [
     {
@@ -32,7 +32,7 @@
           "duration": 1331.58,
           "url": "https://autechre.bandcamp.com/track/tt1pd",
           "id": 2632527131,
-          "stream_url": "https://t4.bcbits.com/stream/f46c24e69dc5ea10b7ec6d42842a7348/mp3-128/2632527131?p=0&ts=1782093035&t=68d0a37eef650b9571d4e541dfa18b9ef59d6818&token=1782093035_7f3e18dc5d95276d87cd41680db1b71a156a13e1"
+          "stream_url": ""
         }
       ],
       "fetch_error": ""
@@ -62,10 +62,10 @@
       "artist": "Autechre",
       "duration": 1331.58,
       "bandcamp_track_id": 2632527131,
-      "stream_url": "https://t4.bcbits.com/stream/f46c24e69dc5ea10b7ec6d42842a7348/mp3-128/2632527131?p=0&ts=1782093035&t=68d0a37eef650b9571d4e541dfa18b9ef59d6818&token=1782093035_7f3e18dc5d95276d87cd41680db1b71a156a13e1",
+      "stream_url": "",
       "embed_url": "https://bandcamp.com/EmbeddedPlayer/track=2632527131/size=large/bgcol=111111/linkcol=e6a23c/artwork=small/transparent=true/"
     }
   ],
-  "archive_summary": "2 archived rows across 2 pulls.",
+  "archive_summary": "2 archived rows across 3 pulls.",
   "summary": "Daily Crate: 1 Bandcamp finds / 1 playable rows from 1 recent music emails."
 }

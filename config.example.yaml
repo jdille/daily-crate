@@ -29,6 +29,8 @@ music:
 bandcamp:
   enabled: true
   max_links_per_run: 80
+  # Keep false for public GitHub Pages: Bandcamp embeds still work without publishing signed preview-stream URLs.
+  publish_direct_stream_urls: false
 
 spotify:
   enabled: false
