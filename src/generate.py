@@ -57,10 +57,13 @@ def collect_items(messages: list[EmailMessage], config: dict[str, Any]) -> list[
     return sorted(by_url.values(), key=lambda x: (-int(x.get('score') or 0), x.get('url', '')))[:max_links]
 
 
-def enrich_items(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
+def enrich_items(items: list[dict[str, Any]], include_stream_urls: bool = False) -> list[dict[str, Any]]:
     enriched = []
     for item in items:
         props, title = fetch_page_props(item['url'])
+        if not include_stream_urls:
+            for track in props.get('_trackinfo') or []:
+                track['stream_url'] = ''
         artist, release = split_title(title, item['url'])
         item.update({
             'artist': artist,
@@ -190,7 +193,11 @@ def generate(config_path: str | Path, sample_path: str | Path | None = None) -> 
         max_results=int(config.get('gmail', {}).get('max_emails') or 80),
         user_id='me',
     )
-    items = enrich_items(collect_items(messages, config)) if config.get('bandcamp', {}).get('enabled', True) else []
+    bandcamp_cfg = config.get('bandcamp', {})
+    items = enrich_items(
+        collect_items(messages, config),
+        include_stream_urls=bool(bandcamp_cfg.get('publish_direct_stream_urls', False)),
+    ) if bandcamp_cfg.get('enabled', True) else []
     now = dt.datetime.now(dt.timezone.utc).astimezone().isoformat(timespec='seconds')
     rows = flatten_rows(items, now[:10])
     meta = {'emails_reviewed': len(messages), 'links_found': len(items), 'items_found': len(items), 'rows_found': len(rows)}

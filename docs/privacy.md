@@ -32,4 +32,6 @@ Defaults minimize exposure:
 - senders are off by default
 - subjects can be disabled in `config.yaml`
 
-Public Bandcamp metadata and links are stored so the UI can play/queue tracks.
+Public Bandcamp metadata and page/embed links are stored so the UI can open or embed tracks.
+
+Direct Bandcamp preview stream URLs are **not** published by default because those URLs include signed, expiring query tokens. Set `bandcamp.publish_direct_stream_urls: true` only for a private site if native `<audio>` playback is worth exposing those temporary URLs.
