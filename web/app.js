@@ -6,6 +6,13 @@ const date10 = s => (s || '').slice(0,10);
 const STORE_KEY = 'daily-crate-state-v1';
 
 function fmtDur(sec) { sec = Math.floor(Number(sec || 0)); if (!sec) return ''; const m = Math.floor(sec/60), r = String(sec % 60).padStart(2,'0'); return `${m}:${r}`; }
+function fmtAddedDate(d) {
+  const m = String(d || '').match(/^(\d{4})-(\d{2})-(\d{2})/);
+  if (!m) return d || '';
+  const dt = new Date(Date.UTC(Number(m[1]), Number(m[2]) - 1, Number(m[3])));
+  const weekday = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'][dt.getUTCDay()];
+  return `${weekday} ${Number(m[2])}/${Number(m[3])}`;
+}
 function label(r) { return [r.artist, r.title, r.release, r.source_subject, r.source_from, ...(r.reasons||[])].join(' ').toLowerCase(); }
 function rowKey(r) { return r?.key || r?.url || ''; }
 function isSaved(r) { return !!(state.saves.items || {})[rowKey(r)]; }
@@ -72,7 +79,7 @@ function render() {
     const score = r.best_score || r.score || 0, tags = (r.reasons || []).slice(0,5).map(t=>`<span class="pill">${esc(t)}</span>`).join('');
     const saved = isSaved(r), listened = isListened(r), d = rowDate(r);
     return `<tr data-key="${esc(rowKey(r))}" class="${state.current && rowKey(state.current) === rowKey(r) ? 'playing' : ''} ${listened ? 'listened' : ''}">
-      <td class="score">${esc(score)}</td><td class="date">${esc(d)}</td>
+      <td class="score">${esc(score)}</td><td class="date" title="${esc(d)}">${esc(fmtAddedDate(d))}</td>
       <td class="artist" title="${esc(r.artist)}">${esc(r.artist || r.label_artist || '')}</td>
       <td><div class="title" title="${esc(r.title)}">${esc(r.title || r.release || 'untitled')} ${r.duration ? `<span class="source">${fmtDur(r.duration)}</span>` : ''}${listened ? '<span class="heard-pill">heard ✓</span>' : ''}</div><details><summary>details</summary><div class="detail">${esc(r.snippet || '')}<br><a href="${esc(r.url)}" target="_blank" rel="noopener">open Bandcamp</a></div></details></td>
       <td class="release hide-sm" title="${esc(r.release)}">${esc(r.release || '')}</td><td class="tags hide-sm">${tags}</td><td class="source hide-sm" title="${esc(r.source_subject)}">${esc(r.source_subject || '')}</td>
